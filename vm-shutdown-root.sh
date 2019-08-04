@@ -1,0 +1,1 @@
+su - cameronbrown -c '/home/cameronbrown/minecraft-gcp/vm-shutdown-user.sh'

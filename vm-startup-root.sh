@@ -1,4 +1,5 @@
 #! /bin/bash
+echo 'Startup Script v0.2'
 USER_NAME=minecraft
 cat /etc/passwd | grep ${USER_NAME} >/dev/null 2>&1
 if [ $? -eq 0 ] ; then

@@ -9,6 +9,7 @@ if [ $? -eq 0 ] ; then
 else
     # Init the server if it doesn't have a user currently.
     echo "User Not Found - Init"
+    useradd ${USER_NAME}
     su - ${USER_NAME} -c 'wget -O - https://raw.githubusercontent.com/GreenishBlue/minecraft-gcp/master/vm-init-user.sh | bash'
 fi
 

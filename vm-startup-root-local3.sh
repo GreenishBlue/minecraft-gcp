@@ -7,10 +7,10 @@ SERVER_PATH=/opt/minecraft-server
 WORLD_PATH=${SERVER_PATH}/world
 
 echo 'Updating system..'
-apt-get update
-apt-get upgrade
+apt-get --yes update
+apt-get --yes upgrade
 echo 'Installing tools'
-apt-get install git screen java
+apt-get --yes install git screen java
 
 cat /etc/passwd | grep ${USER_NAME} >/dev/null 2>&1
 if [ $? -eq 0 ] ; then

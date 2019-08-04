@@ -1,1 +1,3 @@
-su - cameronbrown -c '/home/cameronbrown/minecraft-gcp/vm-shutdown-user.sh'
+#! /bin/bash
+USER_NAME=minecraft
+su - ${USER_NAME} -c 'wget -O - https://raw.githubusercontent.com/GreenishBlue/minecraft-gcp/master/vm-shutdown-user.sh | bash'
